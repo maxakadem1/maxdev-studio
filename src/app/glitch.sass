@@ -16,14 +16,10 @@ body, html
   
   h1.glitch
     color: white
-    font-family: sans-serif
-    font-weight: 800
     position: relative
-    font-size: 100px
-    padding: 30px
+    
     
   h1.glitch::before, h1.glitch::after
-    padding: 30px
     color: white
     content: "MAXDEV"
     position: absolute
@@ -64,3 +60,6 @@ body, html
   @for $i from 0 through $steps 
     #{percentage($i*(1/$steps))} 
       clip: rect(random(300)+px, 550px, random(300)+px, 30px)
+
+
+
