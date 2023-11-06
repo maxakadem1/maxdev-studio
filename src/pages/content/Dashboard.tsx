@@ -1,4 +1,4 @@
-import Homepage from './DashboardPages/Homepage'
+import Homepage from './Homepage'
 
 export default function Dashboard() {
   return (
