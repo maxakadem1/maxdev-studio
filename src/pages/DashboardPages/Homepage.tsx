@@ -1,5 +1,5 @@
 'use client'
-import '../app/glitch.sass'
+import '../../app/glitch.sass'
 import { useRef, useState, useEffect } from 'react'
 import { useSpring, animated, config } from '@react-spring/web'
 
