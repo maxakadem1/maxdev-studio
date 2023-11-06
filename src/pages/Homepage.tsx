@@ -11,7 +11,7 @@ export default function Homepage() {
   useEffect(() => {
     // Check if the videoRef is currently being pointed to an element
     if (videoRef.current) {
-      // Set the playback rate here: 0.5 is half the normal speed.
+      // Set the playback rate here. 0.5 is half the normal speed.
       videoRef.current.playbackRate = 0.6
     }
   }, [])
