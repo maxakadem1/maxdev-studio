@@ -7,7 +7,7 @@ type NavbarProps = {
 
 export default function Navbar({ onMenuClick }: NavbarProps) {
   return (
-    <div className='lg:text-sm text-[10px] z-[100] absolute flex flex-row items-center justify-between top-[3%] w-full bg-black text-white px-12'>
+    <div className='lg:text-sm text-[10px] z-[100] absolute flex flex-row items-center justify-between top-[3%] w-full bg-black text-white px-8'>
       {/* <div className='flex flex-row lg:gap-5 gap-3 bg-[#5f5cff1c] lg:rounded-2xl rounded-lg p-3'>
         <button
           onClick={() => onMenuClick('About')}
@@ -51,7 +51,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
         </div>
       </button>
 
-      <div className='flex flex-row gap-4'>
+      <div className='flex flex-row gap-5 font-light'>
         <button
           onClick={() => onMenuClick('About')}
           className='flex items-center justify-center transition duration-300 ease-in-out hover:text-[#3836b4]'

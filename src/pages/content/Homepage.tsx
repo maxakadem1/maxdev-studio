@@ -1,11 +1,9 @@
 'use client'
 import '../../app/glitch.sass'
-import { useRef, useState, useEffect } from 'react'
-import { useSpring, animated, config } from '@react-spring/web'
+import { useRef, useEffect } from 'react'
 
 export default function Homepage() {
   // FOR VIDEO
-  const video = '/public/MAXDEV.mp4'
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
