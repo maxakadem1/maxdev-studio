@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Navbar from '@/components/Navbar'
 import Homepage from './content/Homepage'
 import About from './content/About'
@@ -10,18 +10,27 @@ import Contact from './content/Contact'
 import { useSpring, animated, config } from '@react-spring/web'
 
 export default function Main() {
-  const [activeComponent, setActiveComponent] = useState<ComponentName>('Home') // default component
+  const [activeComponent, setActiveComponent] = useState<ComponentName>('Home')
 
-  const handleMenuClick = (componentName: ComponentName) => {
-    setActiveComponent(componentName)
-  }
+  const [fade, setFade] = useSpring(() => ({
+    opacity: 1,
+    config: { duration: 300 }, // adjust the duration for a faster or slower transition
+  }))
 
-  const fade = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    reset: true,
-    config: { duration: 500 }, // adjust duration to control speed of transition
-  })
+  const handleMenuClick = useCallback(
+    (componentName: ComponentName) => {
+      // Fade out quickly
+      setFade({ opacity: 0, config: { duration: 150 } })
+
+      // Change component after a slight delay
+      setTimeout(() => {
+        setActiveComponent(componentName)
+        // Fade back in
+        setFade({ opacity: 1 })
+      }, 150) // Delay should match the fade out duration
+    },
+    [setFade]
+  )
 
   const renderComponent = () => {
     switch (activeComponent) {

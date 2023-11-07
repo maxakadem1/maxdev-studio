@@ -17,21 +17,21 @@ export default function Homepage() {
   }, [])
 
   return (
-    <div className='z-[1] flex h-[100vh] w-[100vw] flex-col items-center justify-center bg-black text-white'>
+    <div className='z-[1] flex h-[100vh] w-[100vw] flex-col items-center bg-black text-white'>
       <video
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
-        className='w-full h-full'
+        className='w-[80vw] h-full flex justify-center items-center'
       >
         <source src='/MAXDEV.mp4' type='video/mp4' />
       </video>
 
-      {/* <div className='wrapper '>
-        <h1 className='text-9xl font-semibold glitch'>MAXDEV</h1>
-      </div> */}
+      <div className='wrapper absolute top-[78%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+        <h1 className='text-5xl font-light glitch'>studio</h1>
+      </div>
 
       {/* <div className='text-2xl text-[#FF002E] tracking-[0.5rem]'>STUDIO</div> */}
     </div>
