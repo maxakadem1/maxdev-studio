@@ -32,11 +32,13 @@ export default function Homepage() {
         <h1 className='text-5xl font-light glitch'>studio</h1>
       </div> */}
       <div className='absolute top-[78%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h1 className='text-5xl font-light glitch'>WebDev / UI / UX</h1>
+        <h1 className='lg:text-5xl text-xl font-light glitch'>
+          WebDev / UI / UX
+        </h1>
       </div>
 
       <div className='absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h1 className='text-5xl font-light glitch'>studio</h1>
+        <h1 className='lg:text-5xl text-xl font-light glitch'>studio</h1>
       </div>
       {/* <div className='text-2xl text-[#FF002E] tracking-[0.5rem]'>STUDIO</div> */}
     </div>
