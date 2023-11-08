@@ -1,31 +1,47 @@
-import { useEffect, useRef } from 'react'
-
 export default function Services() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    // Check if the videoRef is currently being pointed to an element
-    if (videoRef.current) {
-      // Set the playback rate here. 0.5 is half the normal speed.
-      videoRef.current.playbackRate = 0.6
-    }
-  }, [])
-
   return (
-    <div className='z-[1] flex h-[100vh] w-[100vw] flex-col items-center justify-center bg-black text-white'>
-      <div>Services</div>
-      <div>-</div>
-      <div>under construction</div>
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className='absolute z-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80vw] h-[80vh] opacity-50 blur-xl'
-      >
-        <source src='/MAXDEV.mp4' type='video/mp4' />
-      </video>
+    <div className='z-[1] flex pt-32 w-screen flex-col items-center justify-center bg-black text-white'>
+      <div className='flex flex-col justify-end items-end w-full p-20 py-12 gap-4'>
+        <div className='lg:text-3xl text-sm'>What we do?</div>
+        <div className='flex flex-row items-end gap-2'>
+          <div className='text-base text-[#5f5cff]'>we listen to</div>
+          <div className='lg:text-8xl text-xl font-bold !leading-[0.8]'>
+            YOUR NEEDS
+          </div>
+        </div>
+
+        <div className='flex flex-row items-end gap-2'>
+          <div className='text-base text-[#5f5cff]'>we create</div>
+          <div className='lg:text-8xl text-xl font-bold !leading-[0.8]'>
+            MUTUAL IDEAS
+          </div>
+        </div>
+        <div className='flex flex-row items-end gap-2'>
+          <div className='text-base text-[#5f5cff]'>
+            we give you the best of
+          </div>
+          <div className='lg:text-8xl text-xl font-bold !leading-[0.8]'>
+            OUR WORK
+          </div>
+        </div>
+        <div className='flex flex-row items-end gap-2'>
+          <div className='text-base text-[#5f5cff]'>and we</div>
+          <div className='lg:text-8xl text-xl font-bold !leading-[0.8]'>
+            EXCEED
+          </div>
+        </div>
+        <div className='flex flex-row items-end gap-2'>
+          <div className='lg:text-8xl text-xl font-bold !leading-[0.8]'>
+            YOUR EXPECTATIONS
+          </div>
+        </div>
+      </div>
+      <div className='w-full p-20 text-start text-3xl'>
+        <div>
+          Driven by your needs, we will deliver a digital solution that will
+          actually make a difference.
+        </div>
+      </div>
     </div>
   )
 }

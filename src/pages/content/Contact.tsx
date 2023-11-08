@@ -34,7 +34,7 @@ export default function Contact() {
           <FiArrowUpRight className='text-xl' />
         </button>
       </div>
-      <div className='z-10 flex flex-row gap-2 w-full px-8 lg:justify-center justify-start'>
+      <div className='z-10 flex flex-row gap-2 w-full px-8 lg:justify-center'>
         <button>
           <BiLogoLinkedin className='text-2xl' />
         </button>

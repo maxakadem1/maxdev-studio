@@ -54,26 +54,26 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
       <div className='flex flex-row gap-5 font-light'>
         <button
           onClick={() => onMenuClick('About')}
-          className='flex items-center justify-center transition duration-300 ease-in-out hover:text-[#3836b4]'
+          className='flex items-center justify-center transition duration-300 ease-in-out hover:text-[#5f5cff]'
         >
           Services
         </button>
         <button
           onClick={() => onMenuClick('Works')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#3836b4]'
+          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#5f5cff]'
         >
           Works
         </button>
 
         <button
           onClick={() => onMenuClick('Process')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#3836b4]'
+          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#5f5cff]'
         >
           Process
         </button>
         <button
           onClick={() => onMenuClick('Contact')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#3836b4]'
+          className='flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#5f5cff]'
         >
           Contact
         </button>
