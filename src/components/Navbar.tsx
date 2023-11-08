@@ -56,7 +56,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           onClick={() => onMenuClick('About')}
           className='flex items-center justify-center transition duration-300 ease-in-out hover:text-[#3836b4]'
         >
-          About
+          Services
         </button>
         <button
           onClick={() => onMenuClick('Works')}

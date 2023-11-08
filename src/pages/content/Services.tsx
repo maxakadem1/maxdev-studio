@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export default function Works() {
+export default function Services() {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Works() {
 
   return (
     <div className='z-[1] flex h-[100vh] w-[100vw] flex-col items-center justify-center bg-black text-white'>
-      Works
+      <div>Services</div>
       <div>-</div>
       <div>under construction</div>
       <video

@@ -1,5 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { FiArrowUpRight } from 'react-icons/fi'
+import { BiLogoLinkedin } from 'react-icons/bi'
+import { AiFillInstagram } from 'react-icons/ai'
 
 export default function Contact() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -13,7 +15,7 @@ export default function Contact() {
   }, [])
 
   return (
-    <div className='z-[1] flex gap-8 h-[100vh] w-[100vw] flex-col items-center justify-center bg-black text-white'>
+    <div className='z-10 flex gap-8 h-[100vh] w-[100vw] flex-col items-center justify-center bg-black text-white'>
       <div className='z-10 flex flex-col items-center justify-center font-bold gap-2 lg:text-center text-start px-8'>
         <div className='text-5xl w-full'>LETS CREATE TOMORROW</div>
         <div className='text-7xl w-full'>TODAY</div>
@@ -32,14 +34,21 @@ export default function Contact() {
           <FiArrowUpRight className='text-xl' />
         </button>
       </div>
-
+      <div className='z-10 flex flex-row gap-2 w-full px-8 lg:justify-center justify-start'>
+        <button>
+          <BiLogoLinkedin className='text-2xl' />
+        </button>
+        <button>
+          <AiFillInstagram className='text-2xl' />
+        </button>
+      </div>
       <video
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
-        className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80%] opacity-50 blur-xl'
+        className='absolute z-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80vw] h-[80vh] opacity-50 blur-xl'
       >
         <source src='/MAXDEV.mp4' type='video/mp4' />
       </video>

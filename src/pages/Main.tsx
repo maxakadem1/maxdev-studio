@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import Navbar from '@/components/Navbar'
 import Homepage from './content/Homepage'
-import About from './content/About'
+import About from './content/Services'
 import Works from './content/Works'
 import { ComponentName } from '@/types'
 import Process from './content/Process'
