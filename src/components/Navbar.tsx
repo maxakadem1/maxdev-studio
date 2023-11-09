@@ -14,7 +14,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           onClick={() => onMenuClick('Home')}
           className='flex flex-row gap-2 items-center justify-center'
         >
-          <div className='pr-5'>
+          <div className='lg:pr-0 pr-5'>
             <Image src='/MAXDEV.svg' alt='Logo' width={50} height={50} />
           </div>
 
