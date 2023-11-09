@@ -1,8 +1,20 @@
 import { FiArrowUpRight } from 'react-icons/fi'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
+import { useEffect, useRef } from 'react'
 
 export default function Services() {
+  // FOR VIDEO
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    // Check if the videoRef is currently being pointed to an element
+    if (videoRef.current) {
+      // Set the playback rate here. 0.5 is half the normal speed.
+      videoRef.current.playbackRate = 0.6
+    }
+  }, [])
+
   return (
     <div className='z-[1] flex pt-32 w-screen flex-col items-center justify-center bg-black text-white'>
       {/* HEAD */}
@@ -52,22 +64,28 @@ export default function Services() {
         <div className='border border-gray-700 rounded-lg w-full'>
           {/* ELEMENT 1 */}
           <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start'>
+            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
               <div className='lg:text-5xl text-xl font-bold'>
-                WEB DEVELOPMENT
+                WEB/E-COMMERCE DEVELOPMENT
               </div>
               <div>
-                Being present online is not enough anymore. You must leave your
-                mark if you want to be seen and heard. And that’s where MAXDEV
-                comes in. We are experienced and capable of creating a simple
-                website or a complex immersive web platform for your needs.
-                Technology evolves, but so do we. Ready to take the game to the
-                next level?
+                Being online is no longer sufficient. To stand out and be
+                noticed, you need to make an impact. MAXDEV is here to help you
+                achieve that. Our expertise ranges from building straightforward
+                websites to developing intricate, immersive web platforms
+                tailored to your requirements. As technology advances, we too
+                adapt and innovate, preparing you to elevate your online
+                presence to new heights.
               </div>
-              <button>learn more</button>
+              <button className='text-sm w-[50%] bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+                <span>Learn More</span>
+                <FiArrowUpRight className='text-xl' />
+              </button>
             </div>
             <div className='w-[50%] flex items-center justify-center'>
-              image here
+              <video ref={videoRef} autoPlay loop muted playsInline>
+                <source src='/GlassBlocksHiRes.mp4' type='video/mp4' />
+              </video>
             </div>
           </div>
 
@@ -77,22 +95,25 @@ export default function Services() {
 
           {/* ELEMENT 2 */}
           <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start'>
-              <div className='lg:text-5xl text-xl font-bold'>
-                WEB DEVELOPMENT
-              </div>
+            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
+              <div className='lg:text-5xl text-xl font-bold'>UI/UX DESIGN</div>
               <div>
-                Being present online is not enough anymore. You must leave your
-                mark if you want to be seen and heard. And that’s where MAXDEV
-                comes in. We are experienced and capable of creating a simple
-                website or a complex immersive web platform for your needs.
-                Technology evolves, but so do we. Ready to take the game to the
-                next level?
+                What distinguishes an ineffective webpage from a lead-generating
+                powerhouse? The key is in superior UI and user-friendly,
+                data-driven UX design. Our approach to success is simple yet
+                unconventional: we don't stick to the standard rules. Let us
+                deliver striking visuals and exceptional usability for your next
+                website.
               </div>
-              <button>learn more</button>
+              <button className='text-sm w-[50%] bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+                <span>Learn More</span>
+                <FiArrowUpRight className='text-xl' />
+              </button>
             </div>
             <div className='w-[50%] flex items-center justify-center'>
-              image here
+              <video ref={videoRef} autoPlay loop muted playsInline>
+                <source src='/glassDonuts.mp4' type='video/mp4' />
+              </video>
             </div>
           </div>
 
@@ -102,22 +123,26 @@ export default function Services() {
 
           {/* ELEMENT 3 */}
           <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start'>
+            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
               <div className='lg:text-5xl text-xl font-bold'>
-                WEB DEVELOPMENT
+                STRATEGY AND SUPPORT
               </div>
               <div>
-                Being present online is not enough anymore. You must leave your
-                mark if you want to be seen and heard. And that’s where MAXDEV
-                comes in. We are experienced and capable of creating a simple
-                website or a complex immersive web platform for your needs.
-                Technology evolves, but so do we. Ready to take the game to the
-                next level?
+                Our goal is clear: we live to create the perfect digital
+                product. So, our solutions and designs are oriented towards its
+                majesty – the user. Thus, we research, study user behaviors and
+                habits, organize data, and develop strategies. At the same time,
+                our professionals are always here to provide help and support.
               </div>
-              <button>learn more</button>
+              <button className='text-sm w-[50%] bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+                <span>Learn More</span>
+                <FiArrowUpRight className='text-xl' />
+              </button>
             </div>
             <div className='w-[50%] flex items-center justify-center'>
-              image here
+              <video ref={videoRef} autoPlay loop muted playsInline>
+                <source src='/MAXDEV.mp4' type='video/mp4' />
+              </video>
             </div>
           </div>
         </div>
