@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 // remove scrolling from whole website
-html {
-  overflow: hidden;
+
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Handle color */
+  border-radius: 6px; /* Rounded corners for the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
 }

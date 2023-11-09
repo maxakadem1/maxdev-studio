@@ -1,4 +1,6 @@
 import { ComponentName } from '@/types'
+import { useState, useEffect } from 'react'
+import { useSpring, animated } from 'react-spring'
 import Image from 'next/image'
 
 type NavbarProps = {
@@ -6,40 +8,36 @@ type NavbarProps = {
 }
 
 export default function Navbar({ onMenuClick }: NavbarProps) {
+  const [show, setShow] = useState(true)
+  const [lastYPos, setLastYPos] = useState(0)
+
+  const navbarAnimation = useSpring({
+    transform: show ? 'translateY(0)' : 'translateY(-100%)',
+    config: { tension: 350, friction: 30 },
+  })
+
+  useEffect(() => {
+    function handleScroll() {
+      console.log('Scrolling...') // For debugging
+      const yPos = window.scrollY
+      const isScrollingUp = yPos < lastYPos
+
+      setShow(isScrollingUp)
+      setLastYPos(yPos)
+    }
+
+    window.addEventListener('scroll', handleScroll, false)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll, false)
+    }
+  }, [lastYPos])
+
   return (
-    <div className='lg:text-sm text-[10px] z-[100] absolute flex flex-row items-center justify-between top-[3%] w-full bg-black text-white px-8'>
-      {/* <div className='flex flex-row lg:gap-5 gap-3 bg-[#5f5cff1c] lg:rounded-2xl rounded-lg p-3'>
-        <button
-          onClick={() => onMenuClick('About')}
-          className='flex items-center justify-center transition duration-300 ease-in-out hover:bg-[#3836b4] lg:h-[40px] h-[25px] lg:w-[100px] w-[60px] lg:rounded-xl rounded-md'
-        >
-          About
-        </button>
-        <button
-          onClick={() => onMenuClick('Works')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:bg-[#3836b4] lg:h-[40px] h-[25px] lg:w-[100px] w-[60px] lg:rounded-xl rounded-md'
-        >
-          Works
-        </button>
-        <button
-          onClick={() => onMenuClick('Home')}
-          className='flex items-center justify-center transition duration-300 ease-in-out hover:bg-[#3836b4] lg:h-[40px] h-[25px] lg:w-[100px] w-[60px] lg:rounded-xl rounded-md'
-        >
-          MAXDEV
-        </button>
-        <button
-          onClick={() => onMenuClick('Process')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:bg-[#3836b4] lg:h-[40px] h-[25px] lg:w-[100px] w-[60px] lg:rounded-xl rounded-md'
-        >
-          Process
-        </button>
-        <button
-          onClick={() => onMenuClick('Contact')}
-          className='flex items-center justify-center  transition duration-300 ease-in-out hover:bg-[#3836b4] lg:h-[40px] h-[25px] lg:w-[100px] w-[60px] lg:rounded-xl rounded-md'
-        >
-          Contact
-        </button>
-      </div> */}
+    <animated.div
+      style={navbarAnimation}
+      className='lg:text-sm text-[10px] z-[100] absolute flex flex-row items-center justify-between top-[3%] w-full text-white px-8'
+    >
       <button
         onClick={() => onMenuClick('Home')}
         className='flex flex-row gap-2 items-center justify-center'
@@ -78,6 +76,6 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           Contact
         </button>
       </div>
-    </div>
+    </animated.div>
   )
 }
