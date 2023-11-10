@@ -129,9 +129,54 @@ export default function Webdev() {
           </div>
         </div>
         {/* process */}
-        <div className='px-40 py-10 w-full flex flex-row gap-5'>
-          <div>text</div>
-          <div>text</div>
+        <div className='px-20 py-10 w-full flex flex-row gap-5'>
+          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+            <div className='text-7xl text-[#7c7cff] font-semibold'>01</div>
+            <div className='text-3xl'>Planning</div>
+            <div className='text-[12px] font-light'>
+              The first phase involves gathering client briefs and inputs for
+              the project. Then based on that information we conduct research on
+              the target audience, competition, and market trends to gain an
+              understanding of the client's needs and preferences. As a result,
+              a plan is created outlining the project scope, identifying the
+              target audience, and creating a site map.
+            </div>
+          </div>
+          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+            <div className='text-7xl text-[#7c7cff] font-semibold'>02</div>
+            <div className='text-3xl'>Design</div>
+            <div className='text-[12px] font-light'>
+              This is where the magic happens, this is where we show why we are
+              different. This phase involves creating the design concepts,
+              wireframes, and prototypes based on the planning phase. We share
+              design mockups with the client once they are ready and start an
+              iteration process where we get feedback on minor details until the
+              final design is approved.
+            </div>
+          </div>
+          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+            <div className='text-7xl text-[#7c7cff] font-semibold'>03</div>
+            <div className='text-3xl'>Development</div>
+            <div className='text-[12px] font-light'>
+              The website development stage involves the actual creation of the
+              website based on the approved design. Front-end development refers
+              to the parts that are visible to the user, such as the layout,
+              design, and user interface. Back-end development for creating a
+              user-friendly CMS system and connecting the front-end content,
+              server-side logic, and integrations with third-party systems.
+            </div>
+          </div>
+          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+            <div className='text-7xl text-[#7c7cff] font-semibold'>04</div>
+            <div className='text-3xl'>Maintenance</div>
+            <div className='text-[12px] font-light'>
+              At MAXDEV, we care about our clients. So, after-sales care is
+              critical to us. We monitor our products carefully after
+              deployment. Once the site is launched, ongoing maintenance is
+              necessary to ensure that it continues to function properly and
+              remains up-to-date with security patches and software updates.
+            </div>
+          </div>
         </div>
       </div>
     </>
