@@ -8,7 +8,7 @@ type NavbarProps = {
 
 export default function Navbar({ onMenuClick }: NavbarProps) {
   return (
-    <div className='lg:text-sm text-[10px] z-[10] absolute flex flex-row items-center justify-between top-[3%] w-full text-white px-12'>
+    <div className='lg:text-sm text-[10px] z-[10] absolute flex flex-row items-center justify-between top-[3%] w-full text-white lg:px-12 px-5'>
       <div className='flex flex-row justify-between items-center w-full backdrop-blur-3xl px-5 py-2 rounded-3xl'>
         <button
           onClick={() => onMenuClick('Home')}
