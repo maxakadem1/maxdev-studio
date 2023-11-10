@@ -2,8 +2,14 @@ import { FiArrowUpRight } from 'react-icons/fi'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
+import { ComponentName } from '@/types'
 
-export default function Services() {
+type ServicesProps = {
+  onMenuClick: (componentName: ComponentName) => void
+}
+
+export default function Services({ onMenuClick }: ServicesProps) {
   // FOR VIDEO
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -77,7 +83,10 @@ export default function Services() {
                 adapt and innovate, preparing you to elevate your online
                 presence to new heights.
               </div>
-              <button className='text-sm w-[50%] bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+              <button
+                onClick={() => onMenuClick('Webdev')}
+                className='text-sm w-[50%] bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+              >
                 <span>Learn More</span>
                 <FiArrowUpRight className='text-xl' />
               </button>

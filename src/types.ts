@@ -1,1 +1,7 @@
-export type ComponentName = 'About' | 'Works' | 'Home' | 'Contact' | 'Process'
+export type ComponentName =
+  | 'About'
+  | 'Works'
+  | 'Home'
+  | 'Contact'
+  | 'Process'
+  | 'Webdev'

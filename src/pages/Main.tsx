@@ -2,12 +2,13 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import Navbar from '@/components/Navbar'
 import Homepage from './content/Homepage'
-import About from './content/Services'
+import Services from './content/Services'
 import Works from './content/Works'
 import { ComponentName } from '@/types'
 import Process from './content/Process'
 import Contact from './content/Contact'
 import { useSpring, animated, config } from '@react-spring/web'
+import Webdev from './services/Webdev'
 
 export default function Main() {
   const [activeComponent, setActiveComponent] = useState<ComponentName>('Home')
@@ -35,7 +36,7 @@ export default function Main() {
   const renderComponent = () => {
     switch (activeComponent) {
       case 'About':
-        return <About />
+        return <Services onMenuClick={handleMenuClick} />
       case 'Works':
         return <Works />
       case 'Home':
@@ -44,6 +45,8 @@ export default function Main() {
         return <Process />
       case 'Contact':
         return <Contact />
+      case 'Webdev':
+        return <Webdev />
       default:
         return <Homepage />
     }
