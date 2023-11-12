@@ -59,18 +59,18 @@ export default function Services({ onMenuClick }: ServicesProps) {
           </div>
         </div>
       </div>
-      <div className='w-full lg:p-20 p-10 text-start lg:text-3xl text-2xl'>
+      <div className='w-full lg:p-20 p-5 text-start lg:text-3xl text-2xl'>
         <div>
           Driven by your needs, we will deliver a digital solution that will
           actually make a difference.
         </div>
       </div>
       {/* MAIN */}
-      <div className='w-full px-20'>
+      <div className='w-full lg:px-20 px-3 lg:py-0 py-10'>
         <div className='border border-gray-700 rounded-lg w-full'>
           {/* ELEMENT 1 */}
-          <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
+          <div className='flex lg:flex-row flex-col-reverse lg:p-20 p-5'>
+            <div className='flex flex-col gap-8 lg:w-[50%] w-full items-start justify-center'>
               <div className='lg:text-5xl text-xl font-bold'>
                 WEB/E-COMMERCE DEVELOPMENT
               </div>
@@ -91,20 +91,20 @@ export default function Services({ onMenuClick }: ServicesProps) {
                 <FiArrowUpRight className='text-xl' />
               </button>
             </div>
-            <div className='w-[50%] flex items-center justify-center'>
+            <div className='lg:w-[50%] w-full flex items-center justify-center'>
               <video ref={videoRef} autoPlay loop muted playsInline>
                 <source src='/GlassBlocksHiRes.mp4' type='video/mp4' />
               </video>
             </div>
           </div>
 
-          <div className='mx-20 '>
+          <div className='lg:mx-20 mx-5'>
             <hr className=' border-gray-700' />
           </div>
 
           {/* ELEMENT 2 */}
-          <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
+          <div className='flex lg:flex-row flex-col-reverse lg:p-20 p-5'>
+            <div className='flex flex-col gap-8 lg:w-[50%] w-full items-start justify-center'>
               <div className='lg:text-5xl text-xl font-bold'>UI/UX DESIGN</div>
               <div>
                 What distinguishes an ineffective webpage from a lead-generating
@@ -119,20 +119,20 @@ export default function Services({ onMenuClick }: ServicesProps) {
                 <FiArrowUpRight className='text-xl' />
               </button>
             </div>
-            <div className='w-[50%] flex items-center justify-center'>
+            <div className='lg:w-[50%] w-full flex items-center justify-center'>
               <video ref={videoRef} autoPlay loop muted playsInline>
                 <source src='/glassDonuts.mp4' type='video/mp4' />
               </video>
             </div>
           </div>
 
-          <div className='mx-20 '>
+          <div className='lg:mx-20 mx-5'>
             <hr className=' border-gray-700' />
           </div>
 
           {/* ELEMENT 3 */}
-          <div className='flex flex-row p-20'>
-            <div className='flex flex-col gap-8 w-[50%] items-start justify-center'>
+          <div className='flex lg:flex-row flex-col-reverse lg:p-20 p-5'>
+            <div className='flex flex-col gap-8 lg:w-[50%] w-full items-start justify-center'>
               <div className='lg:text-5xl text-xl font-bold'>
                 STRATEGY AND SUPPORT
               </div>
@@ -148,7 +148,7 @@ export default function Services({ onMenuClick }: ServicesProps) {
                 <FiArrowUpRight className='text-xl' />
               </button>
             </div>
-            <div className='w-[50%] flex items-center justify-center'>
+            <div className='lg:w-[50%] w-full flex items-center justify-center'>
               <video ref={videoRef} autoPlay loop muted playsInline>
                 <source src='/MAXDEV.mp4' type='video/mp4' />
               </video>

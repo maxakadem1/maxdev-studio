@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import { useEffect, useRef } from 'react'
 import { BiLogoReact } from 'react-icons/bi'
 import { BiLogoJavascript } from 'react-icons/bi'
@@ -178,6 +179,8 @@ export default function Webdev() {
             </div>
           </div>
         </div>
+        {/* footer */}
+        <Footer />
       </div>
     </>
   )
