@@ -114,7 +114,10 @@ export default function Services({ onMenuClick }: ServicesProps) {
                 deliver striking visuals and exceptional usability for your next
                 website.
               </div>
-              <button className='text-sm w-[50%] border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+              <button
+                onClick={() => onMenuClick('UserInterface')}
+                className='text-sm w-[50%] border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+              >
                 <span>Learn More</span>
                 <FiArrowUpRight className='text-xl' />
               </button>
@@ -143,7 +146,10 @@ export default function Services({ onMenuClick }: ServicesProps) {
                 habits, organize data, and develop strategies. At the same time,
                 our professionals are always here to provide help and support.
               </div>
-              <button className='text-sm w-[50%] border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+              <button
+                onClick={() => onMenuClick('Strategy')}
+                className='text-sm w-[50%] border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+              >
                 <span>Learn More</span>
                 <FiArrowUpRight className='text-xl' />
               </button>

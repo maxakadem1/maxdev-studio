@@ -5,3 +5,5 @@ export type ComponentName =
   | 'Contact'
   | 'Process'
   | 'Webdev'
+  | 'Strategy'
+  | 'UserInterface'

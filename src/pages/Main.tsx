@@ -9,6 +9,8 @@ import Process from './content/Process'
 import Contact from './content/Contact'
 import { useSpring, animated, config } from '@react-spring/web'
 import Webdev from './services/Webdev'
+import UserInterface from './services/UserInterface'
+import Strategy from './services/Strategy'
 
 export default function Main() {
   const [activeComponent, setActiveComponent] = useState<ComponentName>('Home')
@@ -47,6 +49,10 @@ export default function Main() {
         return <Contact />
       case 'Webdev':
         return <Webdev />
+      case 'UserInterface':
+        return <UserInterface />
+      case 'Strategy':
+        return <Strategy />
       default:
         return <Homepage />
     }
