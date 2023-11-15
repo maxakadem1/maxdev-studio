@@ -48,7 +48,16 @@ export default function Webdev() {
               <div className='text-sm font-normal text-gray-700'>01</div>
               Immersive Web Experience
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              You only get one opportunity to make a memorable first impression,
+              and you're entitled to an exceptional one. Leveraging our
+              expertise and technical proficiency, we'll elevate your company or
+              product's online presence. Engage your audience with an enriching
+              web experience that includes captivating visualizations, dynamic
+              animations, sleek 3D designs, and an overall extraordinary digital
+              journey. Share your narrative in a way that leaves your website
+              visitors thoroughly impressed.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -60,7 +69,15 @@ export default function Webdev() {
               <div className='text-sm font-normal text-gray-700'>02</div>
               WordPress Development
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              WordPress stands as the world's leading CMS platform, offering
+              straightforward daily web management, and we've become experts in
+              it. Our team designs visually stunning, robust, captivating, and
+              noteworthy solutions that will take your business to greater
+              heights. Choose between a classic WordPress setup or opt for a
+              headless WordPress CMS development, and leave the rest to us.
+              We're here to transform your vision into reality.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -72,7 +89,13 @@ export default function Webdev() {
               <div className='text-sm font-normal text-gray-700'>03</div>
               Custom Web Development
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Who says everything must adhere strictly to standards? At MAXDEV,
+              we respect the established rules and guidelines for product
+              development, but our creativity knows no bounds. This is precisely
+              why our custom web development services are capable of bringing
+              almost any idea you can envision to life!
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -84,7 +107,16 @@ export default function Webdev() {
               <div className='text-sm font-normal text-gray-700'>04</div>
               Product Development
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Got an idea but unsure where to start? Don't fret – MAXDEV is your
+              launchpad. Just bring your concept to us, and we'll handle the
+              heavy lifting. Our comprehensive services include research,
+              branding, design, web development, crafting a go-to-market web
+              strategy, launching, and ongoing support. Simply provide us with
+              the details and outline your requirements. With our experience and
+              expertise, we'll guide your project from its inception to a fully
+              realized, successful product.
+            </div>
           </div>
 
           <div className='m-20 w-full'>

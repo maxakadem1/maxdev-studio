@@ -50,7 +50,14 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>01</div>
               Technical Support
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Congrats, your digital product is finally deployed! However, our
+              job is not yet done. We’re here to do ongoing maintenance,
+              diagnose and troubleshoot problems prevent data breaches, provide
+              guidance on website functionality and features, address
+              performance issues, and offer solutions to ensure smooth operation
+              and optimal performance.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -62,7 +69,13 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>02</div>
               Web Audit
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              If you have an existing website and are seeking an audit, look no
+              further. Just provide us with your domain, and we will conduct a
+              comprehensive evaluation covering four key areas: user interface
+              and user experience, user journey, security, and technical
+              aspects.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -74,7 +87,14 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>03</div>
               SEO Audit
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              What good is an amazing website if it goes unnoticed? This is
+              precisely why an SEO audit is essential. Our team of experts will
+              thoroughly assess and, if necessary, enhance all aspects of your
+              website's SEO. This includes on-page and off-page SEO strategies,
+              keyword optimization, website structure, content quality, and
+              resolving any technical issues.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -86,7 +106,15 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>04</div>
               Dev Ops
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Do you have a website you need to be deployed faster? Or do you
+              need a change in your hosting structure? Worry not, we can help
+              with that too. Our DevOps consulting services will improve the
+              communication between your teams. Our knowledge, combined with the
+              proper tools, will automate your operations, help with strategic
+              planning, improve your server architecture, and enhance your
+              entire work process.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -98,7 +126,14 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>05</div>
               Hosting and Support
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              We are highly specialized in hosting maintenance, and website
+              upkeep, and we pride ourselves on our 45 minutes response time.
+              Together, we will choose the best hosting provider for your
+              website, all after performing a deep analysis. Once the website is
+              hosted, you can leave the care for your website in our hands.
+              Let's connect
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -110,7 +145,14 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>06</div>
               Go To Market Web Strategy
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Another service in which we help your ideas come to life. You have
+              the product, we have the know-how. From analysis, branding, web
+              development, and SEO, to strategic planning and marketing tactics,
+              we have it all. With our full services package, you will easily
+              introduce your products and services to the endless ocean of
+              potential customers.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -122,7 +164,13 @@ export default function Strategy() {
               <div className='text-sm font-normal text-gray-700'>07</div>
               Consulting
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Do you need a website redesign, a migration, access to the market,
+              or a business analysis? Digital Present is at your disposal!
+              Whether it’s a simple consultation about your website structure,
+              user interface, or search engine optimization issues, our
+              professionals are here to help you and your business.
+            </div>
           </div>
 
           <div className='m-20 w-full'>

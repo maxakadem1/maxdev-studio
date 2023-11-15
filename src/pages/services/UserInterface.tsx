@@ -50,7 +50,14 @@ export default function UserInterface() {
               <div className='text-sm font-normal text-gray-700'>01</div>
               Web Design
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              In today's digital age, your company website is essentially your
+              new business card. It's the first point of contact for anyone who
+              discovers your company online. Therefore, maintaining a sharp and
+              up-to-date online presence is crucial. A website that's
+              well-designed and appealing is key to converting visitors into
+              clients.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -62,7 +69,12 @@ export default function UserInterface() {
               <div className='text-sm font-normal text-gray-700'>02</div>
               User Interface Design
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              Even if your website looks appealing, it's just another site in
+              the vast digital landscape unless it makes a lasting impression
+              and excites your users. This is where proper, intuitive, and
+              contemporary UI design comes into play.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -74,7 +86,14 @@ export default function UserInterface() {
               <div className='text-sm font-normal text-gray-700'>03</div>
               User Experience Design
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              To ensure your website converts as envisioned, it's crucial to
+              meticulously consider the journey of your potential users. This
+              entails creating an experience on your website that is both
+              engaging and interactive, and that's where our expertise is
+              invaluable. We are dedicated to developing solutions that are not
+              only simple and usable but also user-friendly.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -86,7 +105,11 @@ export default function UserInterface() {
               <div className='text-sm font-normal text-gray-700'>04</div>
               Mobile Design
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              We design mobile apps too! Our team will take care of everything
+              from research, graphic solution, and app structure to user
+              interface, user experience, accessibility, and optimization.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
@@ -98,7 +121,12 @@ export default function UserInterface() {
               <div className='text-sm font-normal text-gray-700'>05</div>
               Motion Design and 3D
             </div>
-            <div className='w-[50%]'>text</div>
+            <div className='w-[50%]'>
+              The emergence of new technologies has brought new visual concepts.
+              And as we follow trends, MAXEDEV also specialized in motion
+              design. Simple 2D motion graphics, or stunning 3D animations, you
+              choose, we deliver.
+            </div>
           </div>
 
           <div className='m-20 w-full'>
