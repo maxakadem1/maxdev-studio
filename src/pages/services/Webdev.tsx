@@ -22,8 +22,10 @@ export default function Webdev() {
       <div className='z-[1] flex pt-40 w-screen flex-col items-center justify-center bg-black text-white'>
         {/* INTRO */}
         <div className='px-12 flex flex-col items-center gap-5 w-full'>
-          <div className='text-6xl font-bold'>WEB DEVELOPMENT</div>
-          <div className='w-[50%]'>
+          <div className='lg:text-6xl text-4xl font-bold text-center'>
+            WEB DEVELOPMENT
+          </div>
+          <div className='lg:w-[50%] w-full'>
             At MAXDEV studio, web development is at our core. We meticulously
             research, organize data, design, and develop to exceed our clients'
             expectations. Our expertise ranges from immersive web development to
@@ -31,7 +33,7 @@ export default function Webdev() {
             discerning clients.
           </div>
           <video
-            className='w-[50%]'
+            className='lg:w-[50%] w-full'
             ref={videoRef}
             autoPlay
             loop
@@ -42,13 +44,13 @@ export default function Webdev() {
           </video>
         </div>
         {/* INFO */}
-        <div className='flex flex-col items-center gap-5 w-full px-40'>
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+        <div className='flex flex-col items-center gap-5 w-full lg:px-40 px-4'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>01</div>
               Immersive Web Experience
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               You only get one opportunity to make a memorable first impression,
               and you're entitled to an exceptional one. Leveraging our
               expertise and technical proficiency, we'll elevate your company or
@@ -64,12 +66,12 @@ export default function Webdev() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>02</div>
               WordPress Development
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               WordPress stands as the world's leading CMS platform, offering
               straightforward daily web management, and we've become experts in
               it. Our team designs visually stunning, robust, captivating, and
@@ -84,12 +86,12 @@ export default function Webdev() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>03</div>
               Custom Web Development
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Who says everything must adhere strictly to standards? At MAXDEV,
               we respect the established rules and guidelines for product
               development, but our creativity knows no bounds. This is precisely
@@ -101,13 +103,12 @@ export default function Webdev() {
           <div className='m-20 w-full'>
             <hr className=' border-gray-700' />
           </div>
-
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>04</div>
               Product Development
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Got an idea but unsure where to start? Don't fret – MAXDEV is your
               launchpad. Just bring your concept to us, and we'll handle the
               heavy lifting. Our comprehensive services include research,
@@ -124,7 +125,7 @@ export default function Webdev() {
           </div>
         </div>
         {/* tech stack */}
-        <div className='flex flex-row justify-between items-center w-full px-40 py-10'>
+        <div className='flex lg:flex-row flex-col justify-between items-center w-full lg:px-40 px-4 py-10 gap-5'>
           <div className='text-sm'>Technologies</div>
           <div className='flex flex-row gap-10 text-6xl'>
             <BiLogoReact />
@@ -134,8 +135,8 @@ export default function Webdev() {
           </div>
         </div>
         {/* process */}
-        <div className='px-20 py-10 w-full flex flex-row gap-5'>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+        <div className='lg:px-20 px-4 py-10 w-full flex lg:flex-row flex-col gap-5'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>01</div>
             <div className='text-3xl'>Planning</div>
             <div className='text-[12px] font-light'>
@@ -147,7 +148,7 @@ export default function Webdev() {
               target audience, and creating a site map.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>02</div>
             <div className='text-3xl'>Design</div>
             <div className='text-[12px] font-light'>
@@ -159,7 +160,7 @@ export default function Webdev() {
               final design is approved.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>03</div>
             <div className='text-3xl'>Development</div>
             <div className='text-[12px] font-light'>
@@ -171,7 +172,7 @@ export default function Webdev() {
               server-side logic, and integrations with third-party systems.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>04</div>
             <div className='text-3xl'>Maintenance</div>
             <div className='text-[12px] font-light'>
