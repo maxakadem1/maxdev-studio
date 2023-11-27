@@ -54,7 +54,7 @@ export default function Services({ onMenuClick }: ServicesProps) {
           </div>
         </div>
         <div className='flex lg:flex-row flex-col lg:items-end items-center gap-2'>
-          <div className='lg:text-8xl text-4xl font-bold !leading-[0.8] lg:text-right text-center'>
+          <div className='lg:text-8xl text-4xl font-bold  lg:text-right text-center'>
             YOUR EXPECTATIONS
           </div>
         </div>

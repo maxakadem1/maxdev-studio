@@ -26,10 +26,10 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           </div>
         </button>
 
-        <div className='flex flex-row gap-5 font-light'>
+        <div className='flex flex-row gap-5 font-light text-sm'>
           <button
             onClick={() => onMenuClick('About')}
-            className=' flex items-center justify-center transition duration-300 ease-in-out hover:text-[#5f5cff]'
+            className='flex items-center justify-center transition duration-300 ease-in-out hover:text-[#5f5cff]'
           >
             Services
           </button>

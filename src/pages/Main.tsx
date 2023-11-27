@@ -42,7 +42,7 @@ export default function Main() {
       case 'Works':
         return <Works />
       case 'Home':
-        return <Homepage />
+        return <Homepage onMenuClick={handleMenuClick} />
       case 'Process':
         return <Process />
       case 'Contact':
@@ -54,7 +54,7 @@ export default function Main() {
       case 'Strategy':
         return <Strategy />
       default:
-        return <Homepage />
+        return <Homepage onMenuClick={handleMenuClick} />
     }
   }
 

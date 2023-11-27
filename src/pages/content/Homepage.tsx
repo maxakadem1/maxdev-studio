@@ -1,8 +1,14 @@
 'use client'
+import { FiArrowUpRight } from 'react-icons/fi'
 import '../../app/glitch.sass'
 import { useRef, useEffect } from 'react'
+import { ComponentName } from '@/types'
 
-export default function Homepage() {
+type NavbarProps = {
+  onMenuClick: (componentName: ComponentName) => void
+}
+
+export default function Homepage({ onMenuClick }: NavbarProps) {
   // FOR VIDEO
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -38,6 +44,16 @@ export default function Homepage() {
       <div className='absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h1 className='lg:text-3xl text-xl font-light glitch'>studio</h1>
       </div>
+      <div className='absolute top-[88%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+        <button
+          onClick={() => onMenuClick('About')}
+          className='text-sm w-full border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+        >
+          <span>Services</span>
+          <FiArrowUpRight className='text-xl' />
+        </button>
+      </div>
+
       {/* <div className='text-2xl text-[#FF002E] tracking-[0.5rem]'>STUDIO</div> */}
     </div>
   )
