@@ -33,12 +33,12 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           >
             Services
           </button>
-          {/* <button
+          <button
             onClick={() => onMenuClick('Works')}
             className=' flex items-center justify-center  transition duration-300 ease-in-out hover:text-[#5f5cff]'
           >
             Work
-          </button> */}
+          </button>
 
           <button
             onClick={() => onMenuClick('Contact')}

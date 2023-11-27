@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useRef } from 'react'
 import Navbar from '@/components/Navbar'
 import Homepage from './content/Homepage'
 import Services from './content/Services'
@@ -22,18 +22,33 @@ export default function Main() {
 
   const handleMenuClick = useCallback(
     (componentName: ComponentName) => {
-      // Fade out quickly
       setFade({ opacity: 0, config: { duration: 150 } })
 
-      // Change component after a slight delay
       setTimeout(() => {
         setActiveComponent(componentName)
-        // Fade back in
         setFade({ opacity: 1 })
-      }, 150) // Delay should match the fade out duration
+        // Scroll after the fade transition
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 150)
     },
     [setFade]
   )
+
+  useEffect(() => {
+    if (activeComponent) {
+      // Debugging log
+      console.log('Current scroll position before reset:', window.scrollY)
+
+      // Scroll to the top
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+
+      // Debugging log
+      setTimeout(
+        () => console.log('Scroll position after reset:', window.scrollY),
+        100
+      )
+    }
+  }, [activeComponent])
 
   const renderComponent = () => {
     switch (activeComponent) {

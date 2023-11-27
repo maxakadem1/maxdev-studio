@@ -1,5 +1,8 @@
 import Footer from '@/components/Footer'
 import { useEffect, useRef } from 'react'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { FaArrowRight } from 'react-icons/fa'
+import Link from 'next/link'
 
 export default function Works() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -32,7 +35,7 @@ export default function Works() {
           <div
             className='absolute inset-0 rounded-xl'
             style={{
-              backgroundImage: "url('/img/outreachGenius.jpg')",
+              backgroundImage: "url('/img/OutreachG.jpeg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: 0.4,
@@ -49,6 +52,31 @@ export default function Works() {
             Development, Back End Development, Support and Maintenance
           </div>
         </div>
+      </div>
+      <div className='m-20'>
+        <button className='text-sm w-full border border-[#5f5cff73] shadow-[#5f5cff73] shadow-custom-button  hover:bg-[#13133a] flex flex-row items-center justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+          <span>Start a Project</span>
+          <FiArrowUpRight className='text-xl' />
+        </button>
+      </div>
+      <div className='w-full px-20'>
+        <span className='w-full flex items-center justify-center text-6xl font-bold'>
+          OTHER PROJECTS
+        </span>
+        {/* project 1 */}
+        <Link
+          href='https://outreachgenius.ai/'
+          target='_blank'
+          className='flex flex-row w-full justify-between my-20 text-gray-400 hover:text-white cursor-pointer'
+        >
+          <div>01</div>
+          <div>Outreach Genius</div>
+          <div>Custom Web Development, UI/UX Design</div>
+          <div>2023</div>
+          <div>
+            <FaArrowRight />
+          </div>
+        </Link>
       </div>
       {/* footer */}
       <Footer />

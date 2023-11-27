@@ -1,7 +1,5 @@
 import { FiArrowUpRight } from 'react-icons/fi'
-
 import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { ComponentName } from '@/types'
 import Footer from '@/components/Footer'
 
