@@ -1,9 +1,5 @@
 import Footer from '@/components/Footer'
 import { useEffect, useRef } from 'react'
-import { BiLogoReact } from 'react-icons/bi'
-import { BiLogoJavascript } from 'react-icons/bi'
-import { BiLogoTypescript } from 'react-icons/bi'
-import { FaNodeJs } from 'react-icons/fa'
 
 export default function Strategy() {
   // FOR VIDEO
@@ -22,8 +18,10 @@ export default function Strategy() {
       <div className='z-[1] flex pt-40 w-screen flex-col items-center justify-center bg-black text-white'>
         {/* INTRO */}
         <div className='px-12 flex flex-col items-center gap-5 w-full'>
-          <div className='text-6xl font-bold'>STRATEGY AND SUPPORT</div>
-          <div className='w-[50%]'>
+          <div className='lg:text-6xl text-4xl font-bold text-center'>
+            STRATEGY AND SUPPORT
+          </div>
+          <div className='lg:w-[50%] w-full'>
             The necessity of a brand strategy is indisputable. With our
             assistance, your business is set to flourish. Whether it's hosting
             guidance, a straightforward consultation, brand strategy, or product
@@ -33,7 +31,7 @@ export default function Strategy() {
             to aid in your growth.
           </div>
           <video
-            className='w-[50%]'
+            className='lg:w-[50%] w-full'
             ref={videoRef}
             autoPlay
             loop
@@ -44,13 +42,13 @@ export default function Strategy() {
           </video>
         </div>
         {/* INFO */}
-        <div className='flex flex-col items-center gap-5 w-full px-40'>
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+        <div className='flex flex-col items-center gap-5 w-full lg:px-40 px-4'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>01</div>
               Technical Support
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Congrats, your digital product is finally deployed! However, our
               job is not yet done. We’re here to do ongoing maintenance,
               diagnose and troubleshoot problems prevent data breaches, provide
@@ -64,12 +62,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>02</div>
               Web Audit
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               If you have an existing website and are seeking an audit, look no
               further. Just provide us with your domain, and we will conduct a
               comprehensive evaluation covering four key areas: user interface
@@ -82,12 +80,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>03</div>
               SEO Audit
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               What good is an amazing website if it goes unnoticed? This is
               precisely why an SEO audit is essential. Our team of experts will
               thoroughly assess and, if necessary, enhance all aspects of your
@@ -101,12 +99,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>04</div>
               Dev Ops
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Do you have a website you need to be deployed faster? Or do you
               need a change in your hosting structure? Worry not, we can help
               with that too. Our DevOps consulting services will improve the
@@ -121,12 +119,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>05</div>
               Hosting and Support
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               We are highly specialized in hosting maintenance, and website
               upkeep, and we pride ourselves on our 45 minutes response time.
               Together, we will choose the best hosting provider for your
@@ -140,12 +138,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>06</div>
               Go To Market Web Strategy
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Another service in which we help your ideas come to life. You have
               the product, we have the know-how. From analysis, branding, web
               development, and SEO, to strategic planning and marketing tactics,
@@ -159,12 +157,12 @@ export default function Strategy() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>07</div>
               Consulting
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Do you need a website redesign, a migration, access to the market,
               or a business analysis? Digital Present is at your disposal!
               Whether it’s a simple consultation about your website structure,
@@ -179,8 +177,8 @@ export default function Strategy() {
         </div>
 
         {/* process */}
-        <div className='px-20 py-10 w-full flex flex-row gap-5'>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+        <div className='lg:px-20 px-4 py-10 w-full flex lg:flex-row flex-col gap-5'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>01</div>
             <div className='text-3xl'>Discovery process</div>
             <div className='text-[12px] font-light'>
@@ -189,7 +187,7 @@ export default function Strategy() {
               undertaking research and scrutinizing any available data.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>02</div>
             <div className='text-3xl'>Analyzing problem</div>
             <div className='text-[12px] font-light'>
@@ -198,7 +196,7 @@ export default function Strategy() {
               underlying causes, and possible connections.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>03</div>
             <div className='text-3xl'>Problem solving</div>
             <div className='text-[12px] font-light'>
@@ -207,7 +205,7 @@ export default function Strategy() {
               resolving the issue.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>04</div>
             <div className='text-3xl'>Monitoring and Modifications</div>
             <div className='text-[12px] font-light'>

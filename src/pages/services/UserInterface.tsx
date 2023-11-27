@@ -22,8 +22,10 @@ export default function UserInterface() {
       <div className='z-[1] flex pt-40 w-screen flex-col items-center justify-center bg-black text-white'>
         {/* INTRO */}
         <div className='px-12 flex flex-col items-center gap-5 w-full'>
-          <div className='text-6xl font-bold'>UI/UX DESIGN</div>
-          <div className='w-[50%]'>
+          <div className='lg:text-6xl text-4xl font-bold text-center'>
+            UI/UX DESIGN
+          </div>
+          <div className='lg:w-[50%] w-full'>
             Our focus is on user-centered design and solutions, leveraging not
             only our expertise but also the latest technologies. Our methodology
             is rooted in a comprehensive understanding of users and their
@@ -33,7 +35,7 @@ export default function UserInterface() {
             crafting distinct digital products in a refined manner.
           </div>
           <video
-            className='w-[50%]'
+            className='lg:w-[50%] w-full'
             ref={videoRef}
             autoPlay
             loop
@@ -44,13 +46,13 @@ export default function UserInterface() {
           </video>
         </div>
         {/* INFO */}
-        <div className='flex flex-col items-center gap-5 w-full px-40'>
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+        <div className='flex flex-col items-center gap-5 w-full lg:px-40 px-4'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>01</div>
               Web Design
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               In today's digital age, your company website is essentially your
               new business card. It's the first point of contact for anyone who
               discovers your company online. Therefore, maintaining a sharp and
@@ -64,12 +66,12 @@ export default function UserInterface() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>02</div>
               User Interface Design
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               Even if your website looks appealing, it's just another site in
               the vast digital landscape unless it makes a lasting impression
               and excites your users. This is where proper, intuitive, and
@@ -81,12 +83,12 @@ export default function UserInterface() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>03</div>
               User Experience Design
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               To ensure your website converts as envisioned, it's crucial to
               meticulously consider the journey of your potential users. This
               entails creating an experience on your website that is both
@@ -100,12 +102,12 @@ export default function UserInterface() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>04</div>
               Mobile Design
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               We design mobile apps too! Our team will take care of everything
               from research, graphic solution, and app structure to user
               interface, user experience, accessibility, and optimization.
@@ -116,12 +118,12 @@ export default function UserInterface() {
             <hr className=' border-gray-700' />
           </div>
 
-          <div className='flex flex-row gap-20 w-full items-center'>
-            <div className='w-[50%] text-3xl font-semibold'>
+          <div className='flex lg:flex-row flex-col lg:gap-20 gap-8 w-full items-center'>
+            <div className='lg:w-[50%] w-full text-3xl font-semibold'>
               <div className='text-sm font-normal text-gray-700'>05</div>
               Motion Design and 3D
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%] w-full'>
               The emergence of new technologies has brought new visual concepts.
               And as we follow trends, MAXEDEV also specialized in motion
               design. Simple 2D motion graphics, or stunning 3D animations, you
@@ -134,7 +136,7 @@ export default function UserInterface() {
           </div>
         </div>
         {/* tech stack */}
-        <div className='flex flex-row justify-between items-center w-full px-40 py-10'>
+        <div className='flex lg:flex-row flex-col justify-between items-center w-full lg:px-40 px-4 py-10 gap-5'>
           <div className='text-sm'>Technologies</div>
           <div className='flex flex-row gap-10 text-5xl'>
             <FiFigma />
@@ -143,8 +145,8 @@ export default function UserInterface() {
           </div>
         </div>
         {/* process */}
-        <div className='px-20 py-10 w-full flex flex-row gap-5'>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+        <div className='lg:px-20 px-4 py-10 w-full flex lg:flex-row flex-col gap-5'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>01</div>
             <div className='text-3xl'>Research</div>
             <div className='text-[12px] font-light'>
@@ -155,7 +157,7 @@ export default function UserInterface() {
               requirements and preferences in-depth.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>02</div>
             <div className='text-3xl'>Planning</div>
             <div className='text-[12px] font-light'>
@@ -167,7 +169,7 @@ export default function UserInterface() {
               ahead.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>03</div>
             <div className='text-3xl'>Design</div>
             <div className='text-[12px] font-light'>
@@ -179,7 +181,7 @@ export default function UserInterface() {
               the minutiae until the final design is perfected.
             </div>
           </div>
-          <div className='rounded-lg p-6 w-[30%] bg-[#13133a] flex flex-col gap-7'>
+          <div className='rounded-lg p-6 lg:w-[30%] w-full bg-[#13133a] flex flex-col gap-7'>
             <div className='text-7xl text-[#7c7cff] font-semibold'>04</div>
             <div className='text-3xl'>Monitoring</div>
             <div className='text-[12px] font-light'>
