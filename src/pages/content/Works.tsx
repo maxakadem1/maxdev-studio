@@ -50,7 +50,6 @@ export default function Works() {
             }}
           ></div>
 
-          {/* Ensuring content is above the background image */}
           <div className='relative z-10 text-[11px]'>Current Client</div>
           <div className='relative z-10 text-2xl font-bold text-center'>
             OUTREACH GENIUS
@@ -73,21 +72,56 @@ export default function Works() {
         </span>
         {/* project 1 */}
         {windowWidth > 1028 ? (
-          <Link
-            href='https://outreachgenius.ai/'
-            target='_blank'
-            className='flex flex-row lg:text-base text-sm w-full justify-between my-20 text-gray-400 hover:text-white cursor-pointer'
-          >
-            <div>01</div>
-            <div>Outreach Genius</div>
-            <div>Custom Web Development, UI/UX Design</div>
-            <div>2023</div>
-            <div>
-              <FaArrowRight />
-            </div>
-          </Link>
+          <>
+            <Link
+              href='https://outreachgenius.ai/'
+              target='_blank'
+              className='flex flex-row lg:text-base text-sm w-full justify-between my-10 text-gray-400 hover:text-white cursor-pointer'
+            >
+              <div>01</div>
+              <div>Simple Foods Inc</div>
+              <div>Custom Development, Front End, Back End</div>
+              <div>2022</div>
+              <div>
+                <FaArrowRight />
+              </div>
+            </Link>
+            <Link
+              href='https://www.linkedin.com/company/simple-foods-inc/'
+              target='_blank'
+              className='flex flex-row lg:text-base text-sm w-full justify-between my-10 text-gray-400 hover:text-white cursor-pointer'
+            >
+              <div>02</div>
+              <div>Outreach Genius</div>
+              <div>Custom Web Development, UI/UX Design</div>
+              <div>2023</div>
+              <div>
+                <FaArrowRight />
+              </div>
+            </Link>
+          </>
         ) : (
           <>
+            <Link
+              href='https://www.linkedin.com/company/simple-foods-inc/'
+              target='_blank'
+              className='flex flex-col w-full gap-1  justify-between my-20 text-gray-400 hover:text-white cursor-pointer'
+            >
+              <div className='flex flex-row justify-between items-center '>
+                <div className='flex flex-row gap-5'>
+                  <div>01</div>
+                  <div>Simple Foods Inc</div>
+                </div>
+                <div className='flex flex-row  gap-3 justify-center items-center h-full'>
+                  <div className=''>2022</div>
+                  <FaArrowRight className='flex justify-center items-center h-full' />
+                </div>
+              </div>
+
+              <div className='text-[12px]'>
+                Custom Development, Front End, Back End
+              </div>
+            </Link>
             <Link
               href='https://outreachgenius.ai/'
               target='_blank'
@@ -95,7 +129,7 @@ export default function Works() {
             >
               <div className='flex flex-row justify-between items-center '>
                 <div className='flex flex-row gap-5'>
-                  <div>01</div>
+                  <div>02</div>
                   <div>Outreach Genius</div>
                 </div>
                 <div className='flex flex-row  gap-3 justify-center items-center h-full'>
