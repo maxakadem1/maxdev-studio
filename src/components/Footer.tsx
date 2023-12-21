@@ -1,6 +1,7 @@
 import { FiArrowUpRight } from 'react-icons/fi'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -29,12 +30,18 @@ export default function Footer() {
             </div>
 
             <div className='flex flex-row gap-2 justify-start'>
-              <button>
+              <Link
+                href='https://www.linkedin.com/company/maxdev-studio/'
+                target='_blank'
+              >
                 <BiLogoLinkedin className='text-2xl' />
-              </button>
-              <button>
+              </Link>
+              <Link
+                href='https://www.instagram.com/maxdevstudio?igsh=MWxkdXppY2tpaW54OQ=='
+                target='_blank'
+              >
                 <AiFillInstagram className='text-2xl' />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

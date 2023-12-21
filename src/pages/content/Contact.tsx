@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Contact() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -21,26 +22,44 @@ export default function Contact() {
         <div className='text-7xl w-full'>TODAY</div>
       </div>
       <div className='z-10 flex lg:flex-row flex-col gap-5 text-sm w-full p-8 lg:justify-center justify-start'>
-        <button className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+        <Link
+          href='https://www.linkedin.com/company/maxdev-studio/'
+          target='_blank'
+          className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+        >
           <span>START A PROJECT</span>
           <FiArrowUpRight className='text-xl' />
-        </button>
-        <button className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+        </Link>
+        <Link
+          href='https://www.linkedin.com/company/maxdev-studio/'
+          target='_blank'
+          className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+        >
           <span>CONTACT US</span>
           <FiArrowUpRight className='text-xl' />
-        </button>
-        <button className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'>
+        </Link>
+        <Link
+          href='https://www.linkedin.com/company/maxdev-studio/'
+          target='_blank'
+          className='bg-[#5f5cff73] hover:bg-[#5f5cffb6] flex flex-row items-center lg:justify-start justify-between gap-2 p-3 rounded-xl transition duration-300 ease-in-out'
+        >
           <span>SCHEDULE A MEETING</span>
           <FiArrowUpRight className='text-xl' />
-        </button>
+        </Link>
       </div>
       <div className='z-10 flex flex-row gap-2 w-full px-8 lg:justify-center'>
-        <button>
+        <Link
+          href='https://www.linkedin.com/company/maxdev-studio/'
+          target='_blank'
+        >
           <BiLogoLinkedin className='text-2xl' />
-        </button>
-        <button>
+        </Link>
+        <Link
+          href='https://www.instagram.com/maxdevstudio?igsh=MWxkdXppY2tpaW54OQ=='
+          target='_blank'
+        >
           <AiFillInstagram className='text-2xl' />
-        </button>
+        </Link>
       </div>
       <video
         ref={videoRef}
